@@ -1,0 +1,14 @@
+name = "tunnel_monitor"
+main = "src/index.ts"
+compatibility_date = "2023-05-15"
+
+# Cron Triggers
+# Docs: https://developers.cloudflare.com/workers/platform/triggers/cron-triggers/
+# Configuration: https://developers.cloudflare.com/workers/wrangler/configuration/#triggers
+[triggers]
+crons = ["59 23 * * *"] # * * * * * = run every minute
+
+[[ d1_databases ]]
+binding = "DB" # available in your Worker on `env.DB`
+database_name = "d1"
+database_id = "07c51fa0-3404-4a22-bbc6-8993aad6d8ae"
