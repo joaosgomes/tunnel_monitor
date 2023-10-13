@@ -57,3 +57,8 @@ git branch -M main
 git remote add origin https://github.com/joaosgomes/tunnel_monitor.git
 git push -u origin main
 ````
+
+## GitHub Actions
+
+GitHub Actions allow us to run workflows on any GitHub actions. 
+Config file at .github/workflows/workers-deploy.yml.
